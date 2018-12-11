@@ -1,0 +1,122 @@
+#announcement-panel {
+	padding-top: 80px;
+	padding-bottom: 80px;
+    width: 100%;
+}
+
+#announcement-header, #announcement-subheader {
+	color: white;
+	background-color: rgba(0, 143, 2, 0.84);
+	padding: 5px;
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+#announcement-header {
+	font-size: 4em;
+}
+
+#announcement-subheader {
+	font-size: 2em;
+}
+
+#form, #results {
+	padding: 40px;
+}
+
+#announcement-panel {
+	background-image: url("../images/nature-water-texture.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#announcement-panel-suggestions {
+	background-image: url("../images/orange.jpg");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#announcement-header-suggestions, #announcement-subheader-suggestions {
+	color: white;
+	background-color: rgba(242, 143, 13, 0.46);
+	padding: 5px;
+	font-family: "Arial Black", Gadget, sans-serif;
+}
+
+#announcement-header-suggestions {
+	font-size: 2em;
+}
+
+#announcement-subheader-suggestions {
+	font-size: 1em;
+}
+
+a {
+	color: black;
+	text-decoration: none;
+}
+
+button{
+  padding:16px 32px;
+  font-size:16px;
+  font-weight:100;
+  color:#fff;
+  background: white;
+  border:0;
+  font-weight:100;
+	font-family: "Arial Black", Gadget, sans-serif
+
+}
+button:hover{
+  background: lightgray;
+	text-decoration: none;
+	color: white;
+	font-family: "Arial Black", Gadget, sans-serif
+
+}
+
+#home-energy-label, .fa-home {
+	color: rgba(0, 143, 2, 0.84);
+}
+
+#travel-label, .fa-globe {
+	color: rgba(0, 143, 2, 0.84);
+}
+
+#food-label, .fa-cutlery {
+	color: rgba(0, 143, 2, 0.84);
+}
+
+#waste-label, .fa-recycle {
+	color: rgba(0, 143, 2, 0.84);
+}
+
+.progress-bar {
+	font-size: 1.2em;
+}
+
+.score-info {
+	padding: 10px;
+	margin: 0;
+}
+
+#suggestions {
+    color:white;
+}
+
+.bg-success {
+    background-color: lawngreen;
+}
+
+.bg-info {
+    background-color: yellow;
+}
+
+.bg-warning {
+    background-color: darkorange;
+}
+
+.bg-danger {
+    background-color: red;
+}

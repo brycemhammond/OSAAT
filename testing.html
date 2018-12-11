@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>One Step At A Time (OSAAT)</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="OSAAT.png">
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style2.css">
+
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" id="announcement-panel">
+				<h2 id="announcement-header">What's Your Carbon Footprint Rating❓</h2>
+				<h3 id="announcement-subheader">Calculate your score below! ⬇️</h3>
+        <div class="wrapper">
+      		<div>
+      		  <button><a href = "meetTheTeam.html">👨🏽‍💻👩🏿‍💻 Meet The Team 👩🏽‍💻👨🏿‍💻</a></button>
+      		</div>
+      	</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+				<div id="form">
+					<form>
+						<h3 id="home-energy-label"><center><i class="fa fa-home" aria-hidden="true"></i> HOME ENERGY</center></h3>
+						<div class="form-group">
+							<label for="electric">Monthly electric bill</label>
+							<div class="input-group">
+								<div class="input-group-addon">$</div>
+								<input class="form-control" id="electric" type="number" min="0" step="1.00">
+							</div>
+							<span class="help-block">If not applicable, leave blank.</span>
+						</div>
+						<div class="form-group">
+							<label for="gas">Monthly  gas bill</label>
+							<div class="input-group">
+								<div class="input-group-addon">$</div>
+								<input class="form-control" id="gas" type="number" min="0" step="1.00">
+							</div>
+							<span class="help-block">If not applicable, leave blank.</span>
+						</div>
+						<div class="form-group">
+							<label for="oil">Monthly oil bil</label>
+							<div class="input-group">
+								<div class="input-group-addon">$</div>
+								<input class="form-control" id="oil" type="number" min="0" step="1.00">
+							</div>
+							<span class="help-block">If not applicable, leave blank.</span>
+						</div>
+						<br/>
+                        <h3 class="form-section-label" id="travel-label"><center><i class="fa fa-cutlery" aria-hidden="true"></i> FOOD EXPENSES</center></h3>
+						<div class="form-group">
+							<label for="eatingout">Monthly expenses on eating out</label>
+                            <div class="input-group">
+								<div class="input-group-addon">$</div>
+								<input class="form-control" id="eatingout" type="number" min="0" step="1.00">
+							</div>
+							<span class="help-block">If not applicable, leave blank.</span>
+						</div>
+						<div class="form-group">
+							<label for="groceries">Monthly expenses on grocery shopping</label>
+							<div class="input-group">
+								<div class="input-group-addon">$</div>
+								<input class="form-control" id="groceries" type="number" min="0" step="1.00">
+							</div>
+							<span class="help-block">If not applicable, leave blank.</span>
+						</div>
+						<div class="form-group">
+							<label>What best describes your diet?</label>
+							<div class="alert alert-danger" role="alert" id="food-alert"><strong>Yikes!</strong> Please make a selection.</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="FoodOptionsRadios" id="optionsRadio10" value="option10">
+									Vegetarian
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="FoodOptionsRadios" id="optionsRadio11" value="option11">
+									Vegan
+								</label>
+							</div>
+                            <div class="radio">
+								<label>
+									<input type="radio" name="FoodOptionsRadios" id="optionsRadio12" value="option12">
+									Pescatarian
+								</label>
+                                <div class="radio">
+								<label>
+									<input type="radio" name="FoodOptionsRadios" id="optionsRadio13" value="option13">
+									Pollo-Pescatarian
+								</label>
+                                    <div class="radio">
+								<label>
+									<input type="radio" name="FoodOptionsRadios" id="optionsRadio14" value="option14">
+									I eat it all (all meats and other food groups)
+								</label>
+							</div>
+							</div>
+							</div>
+						</div>
+                        <br />
+						<h3 class="form-section-label" id="travel-label"><center><i class="fa fa-globe" aria-hidden="true"></i> TRAVEL</center></h3>
+						<div class="form-group">
+							<label for="car">Monthly miles driven on your car</label>
+							<input class="form-control" id="car" type="number" min="0" step="1">
+							<span class="help-block">If not applicable, leave blank.</span>
+						</div>
+						<div class="form-group">
+							<label for="flights-4-less">Number of flights taken in the past month (5 hours or less)</label>
+							<input class="form-control" id="flights-4-less" type="number" min="0" step="1">
+							<span class="help-block">If not applicable, leave blank.</span>
+						</div>
+						<div class="form-group">
+							<label for="flights-4-more">Number of flights taken in the past month (5 hours or more)</label>
+							<input class="form-control" id="flights-4-more" type="number" min="0" step="1">
+							<span class="help-block">If not applicable, leave blank.</span>
+						</div>
+						<br/>
+						<h3 class="form-section-label" id="waste-label"><center><i class="fa fa-recycle" aria-hidden="true"></i> WASTE MANAGEMENT</center></h3>
+						<div class="form-group">
+							<label>Do you recycle aluminum and similar items?</label>
+							<div class="alert alert-danger" role="alert" id="alum-tin-alert"><strong>Yikes!</strong> Please make a selection.</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="alumtinOptionsRadios" id="optionsRadio3" value="option3">
+									Yes
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="alumtinOptionsRadios" id="optionsRadio4" value="option4">
+									No
+								</label>
+							</div>
+						</div>
+            <div class="form-group">
+							<label>Do you recycle newspaper and other paper-based items?</label>
+							<div class="alert alert-danger" role="alert" id="newspaper-alert"><strong>Yikes!</strong> Please make a selection.</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="newspaperOptionsRadios" id="optionsRadio1" value="option1">
+									Yes
+								</label>
+							</div>
+							<div class="radio">
+								<label>
+									<input type="radio" name="newspaperOptionsRadios" id="optionsRadio2" value="option2">
+									No
+								</label>
+							</div>
+						</div>
+						<br/>
+						<button id="calculate-btn" type="button" class="btn btn-success btn-lg btn-block">Calculate</button>
+                        <br>
+                        <center><button><a href = "index.html">Step Back</a></button></center>
+					</form>
+				</div>
+
+				<div id="results" class="text-center">
+					<center><bold><h1 id="score"></h1></bold></center>
+					<br/>
+					<p class="lead">The number above represents your carbon footprint rating, or the level of greenhouse gases you emit per year in units of carbon dioxide.</p>
+					<br/>
+					<h5 class="bg-success score-info">15,000 or below is EXCELLENT</h5>
+					<h5 class="bg-info score-info">15,000 to 25,999 is GOOD</h5>
+					<h5 class="bg-warning score-info">26,000 to 29,000 is AVERAGE</h5>
+					<h5 class="bg-danger score-info">30,000 or above is BAD</h5>
+					<br/>
+					<br/>
+					<br/>
+          <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center" id="announcement-panel-suggestions">
+              <h2 id="announcement-header-suggestions">Suggestions</h2>
+              <h3 id="announcement-subheader-suggestions" align=left>Home Energy</h3>
+            <ul id = "suggestions">
+                <li align=left>Keep vents open and clean.</li>
+                <li align=left>Insulate water pipes.</li>
+                <li align=left>Wash clothes on cold.</li>
+            </ul>
+              <h3 id="announcement-subheader-suggestions" align=left>Food Expenses</h3>
+                <ul id = "suggestions">
+                <li align=left>Don't be afraid to use coupons.</li>
+                <li align=left>Buy what's on sale. Don't always resort to fast food!</li>
+                <li align=left>Utilize store loyalty program.</li>
+            </ul>
+              <h3 id="announcement-subheader-suggestions" align=left>Travel and Transportation</h3>
+                <ul id = "suggestions">
+                <li align=left>Roll your windows down instead of using AC.</li>
+                <li align=left>Walk short distances instead of using ridesharing/taxi services.</li>
+                <li align=left>Avoid toll rolls.</li>
+            </ul>
+              <h3 id="announcement-subheader-suggestions" align=left>Waste Management</h3>
+                <ul id = "suggestions">
+                <li align=left>Buy recycled paper.</li>
+                <li align=left>Have recycling bins readily available near all trash bins.</li>
+                <li align=left>Reuse paper and aluminum products if possible.</li>
+            </ul>
+            </div>
+          </div>
+          <br/>
+					<button id="recalculate-btn" type="button" class="btn btn-success btn-lg btn-block">Recalculate Score</button>
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+			</div>
+		</div>
+	</div>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="js/script.js" type="text/javascript"></script>
+</body>
+</html>
